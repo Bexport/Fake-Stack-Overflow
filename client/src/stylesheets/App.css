@@ -1,0 +1,414 @@
+/* Add your CSS here */
+
+/*# is used to denote 'ids'*/
+#header{
+    background-color: rgb(211, 207, 207);
+    width: 100%;
+    position: fixed;
+    height: 100px;
+    display: flex;
+    padding: 0;
+    z-index: 1;
+}
+
+#header #headerText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#header #searchBar{
+    position: absolute;
+    right: 100px;
+    /*this is basically a conventional way of using variables in CSS*/
+    --height: 20px;
+    height: var(--height);
+    top: calc(50% - var(--height)/2);
+    font-size: 17px;
+}
+
+#sideBorder{
+    width: 25%; 
+    /* background-color: #000;  */
+    height: calc(100% - 100px); 
+    top: 100px;
+    border-right: 1px dashed black;
+    position: fixed; 
+}
+
+.sidebarButton{
+    background-color: transparent;
+    color:blue;
+    border-radius: 5px;
+    border: 2px solid black;
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+}
+
+#homePage{
+    display: block;
+}
+
+#homePage #questionsButton{
+    background-color: gray;
+}
+
+#tagsPage #tagsButton{
+    background-color: gray;
+}
+
+#answersPage{
+    display: block;
+}
+
+#postAnswerPage{
+    display: block;
+}
+
+.subMain{
+    height: calc(100% - 100px);
+    width: 75%;
+    right: 0;
+    top: 100px;
+    position: absolute;
+}
+
+.subHead{
+    padding: 30px;
+}
+
+.shR1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.shR2{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.pageSubTitle{
+    background-color: white;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+.postQuestion{
+    background-color: blue;
+    color: white;
+    border-width: 2px;
+    height: 40px;
+    width: 100px;
+}
+
+#postQuestionPage{
+    display: block;
+}
+
+#questButt{
+    margin-right: 85px;
+}
+
+#newest{
+    background-color: white;
+    border-width: 1px;
+    padding: 5px;
+}
+
+#active{
+    background-color: white;
+    border-width: 1px;
+    padding: 5px;
+}
+
+#unanswer{
+    background-color: white;
+    border-width: 1px;
+    padding: 5px;
+}
+
+#qContainer{
+    /* height: calc(100%); */
+    margin-bottom: 20px;
+}
+
+.subsubTitle{
+    font-style: italic;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.smallInputBox{
+    width: 100%;
+    height: 40px;
+}
+
+.bigInputBox{
+    height: 250px;
+    width: 100%;
+    text-align: left;
+    vertical-align: top;
+}
+
+.question{
+    width: 100%;
+    /* margin-left: 25%; */
+    border: 1px dashed black;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.commentsTemplate{
+    /* height:50%;
+    display: flex;
+    align-items: center;
+    margin-left:1%;
+    border: 1px dashed black; */
+    width: 100%;
+    /* margin-left: 25%; */
+    border: 1px dashed black;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+
+.cLeft{
+    width:70%;
+    margin-left:30%;
+    margin-top: 20px;
+}
+
+.cRight{
+    margin-left:2%;
+    width:30%;
+}
+
+.numCounts{
+    padding: 20px;
+}
+
+.qNumAns{
+    color: gray;
+    display: inline;
+    white-space: nowrap;
+    display: flex;
+    flex-grow: 1;
+}
+
+.qNumViews{
+    color: gray;
+    display: inline;
+    display: flex;
+    flex-grow: 1;
+}
+
+.TitandTags{
+    padding-top: 20px;
+    width: 100%;
+}
+
+.questionTitle{
+    font-size: x-large;
+    color: blue;
+    text-decoration: underline;
+}
+
+.UsAndTime{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    /* text-align: right;
+    margin-left: auto; */
+}
+.questionAuthor{
+    padding-right: 10px;
+    color: red;
+    /* text-align: right;
+    margin-left: auto; */
+}
+
+.qTime{
+    
+}
+
+.qTagContainer{
+    display: flex;
+    flex-direction: row;
+     margin-top: 10px;
+    /* justify-content: space-between; */
+}
+
+.qTag{
+    font-size: large;
+    height:30px;
+    background-color: darkGrey;
+    border:2px solid black;
+    margin-right:10px;
+}
+
+#tagsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.tag{
+    border: 1px dashed #000; /* Dotted border style */
+    padding: 10px;
+    margin: 10px;
+    width: calc(33.33% - 50px); /* Three tags per row */
+    text-align: center;
+}
+
+.tagname{
+    text-decoration: underline;
+}
+
+#bottomDiv{
+    padding-top: 20px; 
+    display:flex; 
+    flex:row; 
+    justify-content: space-between;
+}
+
+#numAs{
+    margin-right: 35px;
+}
+
+.answerPageUandT{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    right: 0;
+}
+
+.answerPageQuestionText{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.answer{
+    width: 100%;
+    /* margin-left: 25%; */
+    border: 1px dashed black;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    align-items: center;
+}
+
+.ansText{
+    padding: 15px;
+}
+
+#postAns{
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#postAnsButt{
+    background-color: blue;
+    color: white;
+    border-width: 2px;
+    height: 40px;
+    width: 100px;
+}
+
+#postAnswerForm{
+    background-color: blue;
+    color: white;
+    border-width: 2px;
+    height: 40px;
+    width: 100px;
+}
+
+#welcomePage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 200px;
+}
+
+#registerBox{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+#loginBox{
+    border: 2px solid black;
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px; /* Optional: Add some bottom margin for spacing */
+}
+
+.pwFail{
+    color: red;
+    visibility:block;
+    white-space:nowrap;
+}
+
+.pwOK{
+    visibility:hidden;
+}
+
+.Fail{
+    color: red;
+    visibility:block;
+    white-space:nowrap;
+}
+
+.Ok{
+    visibility:hidden;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+#logoutButt{
+    margin-left: 20px;
+    justify-self: end;
+}
+
+.upDownButt{
+    height: 20%;
+    margin-right: 10px;
+}
+
+.leftHeader{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.userDetails, .userOverview, .adminUsers{
+    width: 87.5%;
+    margin-left: 20px;
+    line-height: 2;
+}
+
+.userQuestionsContainer, .allUsersContainer{
+    margin-bottom: 30px;
+}
+
+.userAnswersContainer{
+    margin-bottom: 30px;
+}
+
+.userTagsContainer{
+    margin-bottom: 30px;
+}
+
+
+
